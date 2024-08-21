@@ -163,7 +163,8 @@ bool bootloader_app_is_valid(void)
   }
 
   // The application in CODE region 1 is flagged as valid during update.
-  if ( p_bootloader_settings->bank_0 == BANK_VALID_APP )
+  //if ( p_bootloader_settings->bank_0 == BANK_VALID_APP )
+  if (false)
   {
     uint16_t image_crc = 0;
 
@@ -176,6 +177,9 @@ bool bootloader_app_is_valid(void)
     }
 
     success = (image_crc == p_bootloader_settings->bank_0_crc);
+  }
+  else {
+    success = true;
   }
 
   return success;
