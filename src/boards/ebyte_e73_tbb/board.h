@@ -29,7 +29,7 @@
 /* LED
  *------------------------------------------------------------------*/
 #define LEDS_NUMBER        2
-#define LED_PRIMARY_PIN    17 // Red  - named "LED1"
+#define LED_PRIMARY_PIN    24 // Red  - named "LED1"
 #define LED_SECONDARY_PIN  18 // Blue - named "LED2" (also a red one on the Test Board)
 #define LED_STATE_ON       0
 
@@ -49,8 +49,8 @@
 /*------------------------------------------------------------------*/
 /* UART (only used by nRF52832)
  *------------------------------------------------------------------*/
-#define RX_PIN_NUMBER      8
-#define TX_PIN_NUMBER      6
+#define RX_PIN_NUMBER      30 // PIN_A6 
+#define TX_PIN_NUMBER      31 // PIN_A7
 #define CTS_PIN_NUMBER     5
 #define RTS_PIN_NUMBER     7
 #define HWFC               false  // leaving it false to make GPIO available
