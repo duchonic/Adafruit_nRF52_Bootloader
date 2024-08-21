@@ -8,3 +8,6 @@
 	path = lib/uf2
 	url = https://github.com/microsoft/uf2.git
 
+[submodule "nRF52832-buttonless-dfu-development-tutorial"]
+	path = nRF52832-buttonless-dfu-development-tutorial
+	url = git@github.com:gamnes/nRF52832-buttonless-dfu-development-tutorial.git
